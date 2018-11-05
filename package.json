@@ -1,0 +1,19 @@
+{
+  "name": "word-test",
+  "version": "1.0.0",
+  "description": "It is word test web application that used firebase realtime database .",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoshi1125hisa/firebase-word-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoshi1125hisa/firebase-word-test/issues"
+  },
+  "homepage": "https://github.com/yoshi1125hisa/firebase-word-test#readme"
+}

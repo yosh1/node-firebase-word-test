@@ -1,5 +1,5 @@
 var admin = require('firebase-admin');
-var serviceAccount = require('word-test-yoshi1125hisa-firebase-adminsdk-9ya4y-ea159cf153.json');
+var serviceAccount = require('firebase.json');
 
 admin.initializeApp( {
     credential: admin.credential.cert(serviceAccount),
@@ -16,7 +16,7 @@ var ref = db.ref("word"); //word要素への参照
 ref.on("value", function(snapshot) {
     /* ここに取得したデータを用いた何らかの処理 */
     console.log(snapshot.val());
-}, 
+},
 function(errorObject) {
     console.log("The read failed: " + errorObject.code);
 } );
