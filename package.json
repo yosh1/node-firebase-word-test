@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/yoshi1125hisa/firebase-word-test/issues"
   },
-  "homepage": "https://github.com/yoshi1125hisa/firebase-word-test#readme"
+  "homepage": "https://github.com/yoshi1125hisa/firebase-word-test#readme",
+  "dependencies": {
+    "firebase-admin": "^6.1.0"
+  },
+  "devDependencies": {}
 }

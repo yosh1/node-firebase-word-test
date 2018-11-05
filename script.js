@@ -1,5 +1,5 @@
 var admin = require('firebase-admin');
-var serviceAccount = require('firebase.json');
+var serviceAccount = require('serviceAccountKey.json');
 
 admin.initializeApp( {
     credential: admin.credential.cert(serviceAccount),
@@ -15,7 +15,7 @@ var ref = db.ref("word"); //word要素への参照
 /*　word以下に対しての非同期コールバック */
 ref.on("value", function(snapshot) {
     /* ここに取得したデータを用いた何らかの処理 */
-    console.log(snapshot.val());
+    consoale.log(snapshot.val());
 },
 function(errorObject) {
     console.log("The read failed: " + errorObject.code);
