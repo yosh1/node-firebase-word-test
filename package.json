@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/yoshi1125hisa/firebase-word-test#readme",
   "dependencies": {
-    "firebase-admin": "^6.1.0"
+    "firebase": "^5.5.7",
+    "firebase-admin": "^6.1.0",
+    "loader": "^2.1.1"
   },
   "devDependencies": {}
 }
