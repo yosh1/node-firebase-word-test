@@ -16,8 +16,14 @@ var ref = db.ref("word"); //word要素への参照
 /*　word以下に対しての非同期コールバック */
 ref.on("value", function(snapshot) {
     /* ここに取得したデータを用いた何らかの処理 */
-    console.log(snapshot.val());
+    console.log(snapshot.val()); // 全て
+      console.log(snapshot.val().question); //またはsnapshot.child("").question.val()
+      console.log(snapshot.val().answer);
 },
 function(errorObject) {
     console.log("The read failed: " + errorObject.code);
+} );
+
+ref.update( {
+    "question": 10 //更に子の要素にアクセスするには / で区切って指定
 } );
